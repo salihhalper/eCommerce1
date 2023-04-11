@@ -14,7 +14,7 @@ const style = StyleSheet.create({
     alignItems: "center",
   },
   headerText: {
-    fontWeight: "300",
+    fontWeight: "200",
     fontSize: 30,
     lineHeight: 45,
     color: "#737373",
