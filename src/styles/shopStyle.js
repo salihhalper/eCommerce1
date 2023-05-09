@@ -33,7 +33,7 @@ const style=StyleSheet.create({
     breadCrumbImage:{
         marginHorizontal:15
     },
-    ShopCards:{
+    shopCards:{
         alignItems:'center'
     },
     shopCard:{
@@ -42,31 +42,30 @@ const style=StyleSheet.create({
         marginVertical:7.5,
         alignItems:'center',
         justifyContent:'center',
-        
-
-     },
-     shopCardText1:{
+    },
+    shopCardText1:{
         color:'white',
         fontWeight:'700',
         fontSize:16,
         lineHeight:24,
         zIndex:1,
         marginBottom:15
-     },
-     shopCardText2:{
+    },
+    shopCardText2:{
         color:'white',
         fontWeight:'700',
         fontSize:14,
         lineHeight:24,
         zIndex:1
-     },
-     overlay:{
-        backgroundColor:'rgba(0,0,0,0.4)',
+    },
+    overlay:{
+        backgroundColor:'rgba(0,0,0,0.4)', // rbga => alpha
         position:'absolute',
         top:0,
         bottom:0,
         left:0,
-        right:0
-     }
+        right:0,
+    }
+   
 })
 export default style

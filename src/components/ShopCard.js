@@ -2,7 +2,6 @@ import {View, Text, ImageBackground} from 'react-native';
 import React from 'react';
 import style from '../styles/shopStyle';
 const ShopCard = props => {
-  console.log(props);
   return (
     <ImageBackground
       resizeMode="cover"

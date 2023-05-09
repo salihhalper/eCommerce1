@@ -1,7 +1,8 @@
 import React from 'react';
-import {View, Text, Image, ImageBackground, ScrollView, } from 'react-native';
+import {View, Text, Image, ImageBackground, ScrollView} from 'react-native';
 import style from '../../styles/shopStyle';
 import ShopCard from '../../components/ShopCard';
+
 const TopContainer = () => {
   return (
     <View style={style.topContainer}>
@@ -19,29 +20,27 @@ const TopContainer = () => {
 };
 const ShopCards = () => {
   return (
-    <View style={style.ShopCards}>
-        <ShopCard 
+    <View style={style.shopCards}>
+      <ShopCard
         text1="TEXT 1"
-        image={require('../../assets/images/card-cover-5.png')}
-        />
-        <ShopCard 
+        image={require('../../assets/images/shop-1.png')}
+      />
+      <ShopCard
         text1="TEXT 2"
-        image={require('../../assets/images/card-cover-6.png')}
-        />
-        <ShopCard 
+        image={require('../../assets/images/shop-2.png')}
+      />
+      <ShopCard
         text1="TEXT 3"
-        image={require('../../assets/images/card-cover-7.png')}
-        />
-        <ShopCard 
+        image={require('../../assets/images/shop-3.png')}
+      />
+      <ShopCard
         text1="TEXT 4"
-        image={require('../../assets/images/card-cover-8.png')}
-        />
-        <ShopCard 
+        image={require('../../assets/images/shop-4.png')}
+      />
+      <ShopCard
         text1="TEXT 5"
-        image={require('../../assets/images/card-cover-9.png')}
-        />
-      
-        
+        image={require('../../assets/images/shop-5.png')}
+      />
     </View>
   );
 };

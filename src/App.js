@@ -15,11 +15,25 @@ import React from 'react';
  * Favorite
  *
  */
-import {Home,Shop} from './pages'
+import {Home,Shop,Search,Users} from './pages'
+import {NavigationContainer} from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack =createNativeStackNavigator(
+
+)
 
 const App = () => {
-  return <Home/>
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='Home' screenOptions={{headerShown:false}}>
+        <Stack.Screen name='Home' component={Home}/>
+        <Stack.Screen name='Shop' component={Shop}/>
+        <Stack.Screen name='Search' component={Search}/>
+        <Stack.Screen name='Users' component={Users}/>
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
 };
 
 export default App;
-
